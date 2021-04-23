@@ -12,8 +12,9 @@
         echo '<p>Chiffre 1:'.$nbr1.'</p>';
         $nbr2=rand(1,100);
         echo '<p>Chiffre 2:'.$nbr2.'</p>';
-        $absolue = abs(($nbr1 - $nbr2));
-        echo '<p>Absolue:'.$nbr2.'</p>';
+        $value=$nbr1 - $nbr2;
+        $absolue = abs($value);
+        echo '<p>Absolue:'.$absolue.'</p>';
         if($absolue >= 25 && $absolue <=75){
             echo 'La valeur absolue de'.$nbr1.'-'.$nbr2.'est comprise entre 25 et 75';
         }
